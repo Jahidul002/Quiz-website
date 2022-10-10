@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AnsAndQs from './Copmo/AnsAndQs';
-import Home from './Copmo/Home';
+import AnsAndQs from './AnsAndQs/AnsAndQs';
+import Home from './Copmo/Home/Home';
 import Root from './Root/Root';
 
 const App = () => {
@@ -11,7 +11,8 @@ const App = () => {
       element: <Root></Root>,
       children: [
         {
-          path: '/home',
+          path: '/',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {

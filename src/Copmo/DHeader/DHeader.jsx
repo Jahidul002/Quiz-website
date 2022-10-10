@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => {
+const DHeader = () => {
     return (
         <div>
-            <h1>I am home</h1>
+            <h1>Dheadr ami</h1>
         </div>
     );
 };
 
-export default Home;
+export default DHeader;
