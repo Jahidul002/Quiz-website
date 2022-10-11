@@ -8,7 +8,7 @@ const Header = () => {
             <div>
                 <Link className='m-2 hover:bg-slate-400 px-3 py-1 rounded-md font-semibold' to='/'>Home</Link>
                 <Link className='m-2 hover:bg-slate-400 px-3 py-1 rounded-md  font-semibold' to='/ansAndQs'>Get Question</Link>
-                <Link className='m-2 hover:bg-slate-400 px-3 py-1 rounded-md font-semibold' to='/statitics'>Statitics</Link>
+                <Link className='m-2 hover:bg-slate-400 px-3 py-1 rounded-md font-semibold' to='/statistics'>Statistics</Link>
             </div>
         </div>
     );

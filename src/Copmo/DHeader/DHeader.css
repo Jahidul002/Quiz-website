@@ -1,0 +1,16 @@
+.bg-img {
+    background-image: url(../../image/orange-question-mark-background-with-text-space_1017-27394.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    color: aliceblue;
+    justify-content: center;
+    border-end-end-radius: 10px;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}

@@ -7,9 +7,9 @@ const Home = () => {
     const theData = useLoaderData()
     console.log(theData);
     return (
-        <div>
+        <div className='container mx-auto'>
             <DHeader></DHeader>
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid md:grid-cols-4 gap-5 mt-10'>
                 {
                     theData.data.map(data => <HomeData key={data.id} data={data}></HomeData>)
                 }
