@@ -1,0 +1,17 @@
+.qs-bg {
+    background-image: url(../../image/question-mark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: aliceblue;
+    justify-content: center;
+    border-end-end-radius: 10px;
+}
+
+.qs {
+    background-color: #3a37d165;
+}
+
+.option {
+    background-color: rgba(250, 235, 215, 0.534);
+}
