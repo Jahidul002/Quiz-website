@@ -4,11 +4,11 @@ import AnsTheQuiz from '../AnsTheQuiz/AnsTheQuiz';
 
 const QuizPage = () => {
     const quizData = useLoaderData()
-    console.log(quizData.data.questions);
+    // console.log(quizData.data.questions);
     return (
         <div>
             {
-                quizData.data.questions.map(qs => <AnsTheQuiz key={qs.id} data={qs}></AnsTheQuiz>)
+                quizData.data.questions.map(qs => <AnsTheQuiz key={qs.id} ids={qs.id} data={qs}></AnsTheQuiz>)
             }
         </div>
     );

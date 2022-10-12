@@ -15,6 +15,14 @@ const AnsTheQuiz = ({ data }) => {
         setCorAns(correctAnswer)
         toast(correctAnswer)
     };
+    function handleAns(ans) {
+        if (ans === correctAnswer) {
+            toast('Right Answer')
+        }
+        else {
+            toast("Wrong Answer")
+        }
+    }
     return (
         <div>
             <div className='xs: min-h-full md:h-96 text-center p-5 mx-10 md:my-10 rounded-md qs-bg shadow shadow-2xl shadow-red-600'>
@@ -25,7 +33,7 @@ const AnsTheQuiz = ({ data }) => {
                 </div>
                 <div className='md:grid grid-cols-2 md:gap-10'>
                     {
-                        options.map(qs => <CFormCheck className='option text-black font-semibold p-5 rounded-lg' type="radio" name="flexRadioDefault" id="flexRadioDefault1" label={qs} />)
+                        options.map(qs => <CFormCheck onClick={() => handleAns({ qs }.qs)} className='option text-black font-semibold p-5 rounded-lg' type="radio" name="flexRadioDefault" id="flexRadioDefault1" label={qs} />)
                     }
                 </div>
             </div>

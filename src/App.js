@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AnsAndQs from './Copmo/AnsAndQs/AnsAndQs';
+import Error from './Copmo/Error/Error';
 import Home from './Copmo/Home/Home';
 import QuizPage from './Copmo/QuizPage/QuizPage';
 import Statistics from './Copmo/Statistics/Statistics';
@@ -33,8 +34,13 @@ const App = () => {
           element: <QuizPage></QuizPage>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <Error></Error>
     }
   ])
+
   return (
     <div>
       <RouterProvider router={nathErGoro}></RouterProvider>

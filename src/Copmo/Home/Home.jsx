@@ -5,7 +5,7 @@ import DHeader from '../DHeader/DHeader';
 
 const Home = () => {
     const theData = useLoaderData()
-    console.log(theData);
+    // console.log(theData);
     return (
         <div className='container mx-auto'>
             <DHeader></DHeader>
