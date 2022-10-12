@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './AnsAndQs.css'
 const AnsAndQs = () => {
     return (
-        <div>
+        <div className='bg-image'>
             <h1>Ans and question</h1>
         </div>
     );

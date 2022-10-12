@@ -1,0 +1,6 @@
+.bg-image {
+    background-image: url(../../image/qs.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
