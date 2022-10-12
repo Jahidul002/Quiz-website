@@ -25,13 +25,13 @@ const AnsTheQuiz = ({ data }) => {
     }
     return (
         <div>
-            <div className='xs: min-h-full md:h-96 text-center p-5 mx-10 md:my-10 rounded-md qs-bg shadow shadow-2xl shadow-red-600'>
-                <div className='qs md:p-5 md:mb-2 rounded-md'>
-                    <p className='md:text-xl text-rose-700 font-bold'>{question.slice(3, -4)}</p>
+            <div className='qs-bg text-center mb-10 container mx-auto rounded-lg'>
+                <div>
+                    <p>{question.slice(3, -4)}</p>
                     <EyeIcon onClick={() => handlecorrectAnswer()} className="h-5 w-5 text-white" />
                     <ToastContainer />
                 </div>
-                <div className='md:grid grid-cols-2 md:gap-10'>
+                <div className='md:grid grid-cols-2 grid-rows-2'>
                     {
                         options.map(qs => <CFormCheck onClick={() => handleAns({ qs }.qs)} className='option text-black font-semibold p-5 rounded-lg' type="radio" name="flexRadioDefault" id="flexRadioDefault1" label={qs} />)
                     }

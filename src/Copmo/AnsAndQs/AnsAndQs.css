@@ -4,3 +4,29 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+.cont-bg {
+    background-color: #fffcf833;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.q-bg {
+    background-color: #27929254;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.ans-bg {
+    background-color: #27929254;
+    padding: 10px;
+    color: aliceblue;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}

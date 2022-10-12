@@ -2,7 +2,7 @@
     background-image: url(../../image/question-mark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: auto;
     color: aliceblue;
     justify-content: center;
     border-end-end-radius: 10px;
